@@ -8,7 +8,7 @@ for (int i = 0; i < array.Length; i++)
 }
 
 double min = array[0];
-for (int = 0; 1<array.Length;i++)
+for (int i = 0; 1<array.Length;i++)
 {
     if (array[i]<min)
     {

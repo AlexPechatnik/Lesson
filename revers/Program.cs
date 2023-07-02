@@ -1,5 +1,5 @@
 ﻿/*
-int[] array = new int[8] { 1, 4, 5, 7, 8, 2, 0, 9 };
+int[] array = new int[9] { 1, 4, 5, 7, 8, 2, 0, 9, 2 };
 int[] reversArray = new int[array.Length];
 for (int i = 0; i < array.Length; i++)
 {
