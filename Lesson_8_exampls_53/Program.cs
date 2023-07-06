@@ -3,24 +3,32 @@
 которая поменяет местами первую и последнюю строку массива.
 */
 
-int[,] array = new int[5, 5];
-int[,] temp = new int[5, 5];
+int[,] array = new int[,] {{1,2,3},{4,5,6},{7,8,9}};
+
+int line1 = 0;
+int line3 = 2;
 for (int i = 0; i < array.GetLength(0); i++)
 {
     for (int j = 0; j < array.GetLength(1); j++)
     {
-        array[i, j] = new Random().Next(0, 10); ;
         System.Console.Write(array[i, j] + " ");
     }
     System.Console.WriteLine();
 }
+System.Console.WriteLine();
 
+for (int i = 0; i < array.GetLength(1); i++)
+{
+    int temp = array[line1, i];
+    array[line1, i] = array[line3, i];
+    array[line3,i] = temp;
+}
 for (int i = 0; i < array.GetLength(0); i++)
 {
     for (int j = 0; j < array.GetLength(1); j++)
     {
-        array[i, j] = temp[i, j];
-        System.Console.Write(temp[i, j]);
+        System.Console.Write(array[i, j] + " ");
     }
-    System.Console.Write(" ");
+    System.Console.WriteLine();
 }
+System.Console.WriteLine();
